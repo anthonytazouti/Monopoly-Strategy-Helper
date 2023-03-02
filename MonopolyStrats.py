@@ -1,6 +1,7 @@
 userinput = input("Enter the name of the SPOT YOU Landed on.").upper()
 
 
+
 brown1 = ("MEDITERRANEAN")
 brown2 = ("BALTIC")
 
@@ -31,29 +32,29 @@ green3 = ("PENNSYLVANIA AVENUE")
 blue1 = ("PARK PLACE")
 blue2 = ("BOARDWALK")
 
-trains = ("READING RAILROAD", "PENNSYLVANIA RAILROAD", "B&0 RAILROAD", "SHORT LINE")
-utility = ("ELECTRIC COMPANY", "WATER WORKS",)
-tax = ("LUXURY TAX", "INCOME TAX")
+trains = ("READING RAILROAD" and "PENNSYLVANIA RAILROAD" and "B&0 RAILROAD" and "SHORT LINE")
+utility = ("ELECTRIC COMPANY" and "WATER WORKS")
+tax = ("LUXURY TAX" and "INCOME TAX")
 
 
-chest = ("Pick a card.")
-incomeTax = ("Pay the tax.")
-chance = ("Pick a card.")
-jail = ("Go to jain and you also loose a turn :/")
-freeParking = ("Take the money in the pot!")
-onGo = ("Collect $200.")
+chest = ("CHEST")
+incomeTax = ("INCOME TAX")
+chance = ("CHANCE")
+jail = ("JAIL")
+freeParking = ("FREE PARKING")
+onGo = ("GO")
 
 
 
 
 
-if userinput == brown1 or brown2:
+if userinput == brown1 or userinput == brown2:
     print ("Price: $60")
     print ("-"*25)
     print ("Price to put up a house: $50")
     print ("-"*25)
     print("Is it a good buy?: Not overall, though this board position is cheap it has a terrible position. No chance card is worth it")
-elif userinput == lightBlue1 or lightBlue2:
+elif userinput == lightBlue1 or userinput == lightBlue2:
     print ("Price: $100")
     print ("-"*25)
     print ("Price to put up a house: $50")
@@ -65,7 +66,7 @@ elif userinput == lightBlue3:
     print ("Price to put up a house: $50")
     print ("-"*25)
     print("Is it a good buy?: Unlike any of the other light blue colors, this is little more worth the investment, You will receive a higher ROI.")
-elif userinput == pink1 or pink2:
+elif userinput == pink1 or userinput == pink2:
     print ("Price: $140")
     print ("-"*25)
     print ("Price to put up a house: $100")
@@ -77,7 +78,7 @@ elif userinput == pink3:
     print ("Price to put up a house: $100")
     print ("-"*25)
     print("Is it a good buy?: Yes, buy. Very profitable, and has a good position on the board.")
-elif userinput == orange1 or orange2:
+elif userinput == orange1 or userinput == orange2:
     print ("Price: $180")
     print ("-"*25)
     print ("Price to put up a house: $100")
@@ -89,7 +90,7 @@ elif userinput == orange3:
     print ("Price to put up a house: $100")
     print ("-"*25)
     print("Is it a good buy?: Is it a good buy?: Yes, Orange is easily the best property in the game, great board position and very profitable.")
-elif userinput == red1 or red2:
+elif userinput == red1 or userinput == red2:
     print ("Price: $220")
     print ("-"*25)
     print ("Price to put up a house: $150")
@@ -101,7 +102,7 @@ elif userinput == red3:
     print ("Price to put up a house: $150")
     print ("-"*25)
     print("Is it a good buy?: Is it a good buy?: Really great board position, invest in these properties.")
-elif userinput == yellow1 or yellow2:
+elif userinput == yellow1 or userinput == yellow2:
     print ("Price: $260")
     print ("-"*25)
     print ("Price to put up a house: $150")
@@ -113,7 +114,7 @@ elif userinput == yellow3:
     print ("Price to put up a house: $150")
     print ("-"*25)
     print("Is it a good buy?: Pretty average, the board position is just a little out of the way from being decent, very average.")
-elif userinput == green1 or green2:
+elif userinput == green1 or userinput == green2:
     print ("Price: $300")
     print ("-"*25)
     print ("Price to put up a house: $200")
@@ -137,5 +138,24 @@ elif userinput == blue2:
     print ("Price to put up a house: $200")
     print ("-"*25)
     print("Is it a good buy?: Is it a good buy?: This is a risky buy, if you invest in this property you have a 50/50 chance of making a lot of money.")
+elif userinput == trains:
+    print("Buy all the trains you can buy, they are simple but usually come in handy.")
+elif userinput == utility:
+    print("Buy the utilities if you have the money they come in handy long term")
+elif userinput == tax:
+    print("Pay the tax!")
+elif userinput == chest:
+    print ("Pick a card.")
+elif userinput == incomeTax:
+    print("pay 10% of your total worth to the Bank")
+elif userinput == chance:
+    print("Pick a card.")
+elif userinput == jail:
+    print("Go to jain and you also loose a turn :/")
+elif userinput == freeParking:
+    print("Take the money in the pot!")
+elif userinput == onGo:
+    print("Collect $200.")
+
 else:
     print("You entered in an invalid Monopoly square name! Try again.")
